@@ -1,0 +1,227 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+                <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                          <span class="sr-only">Toggle navigation</span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                        </button>
+                        
+                       <div style="margin-top: 5%;">
+                          <div class="month-wrapper">
+                            <a class="month-arrow" href="">
+                              <img class="month-arrow-img" src="../images/left_arrow.png">
+                            </a>
+                              <div class="month">OCTOBER 2017</div>
+                              <a class="month-arrow" href="">
+                                <img class="month-arrow-img" src="../images/right_arrow.png">
+                              </a>
+                          </div>
+                        <div ng-repeat="data in mainCtrl.dates"  class="date">        
+                            <a ui-sref="date({id: data.id})" class="dates">{{data.date}}</a>
+                        </div>      
+                        </div>
+
+                </div>             
+        </div>
+  </nav>
+
+<div class="schedule-date-time">
+      <div class="schedule-time">
+        <div class="schedule">
+          <div class="text">09:00 am</div>
+          <span class="glyphicon glyphicon-chevron-down"></span>
+        </div>
+      </div>
+      <div class="line"></div>
+      <div class="schedule-time">
+          <div class="schedule">
+            <div class="text">Wed, 18 Oct 2017</div>
+            <span class="glyphicon glyphicon-chevron-down"></span>
+          </div>
+        </div>
+        <div class="line"></div>
+</div>
+    
+    
+    
+    <div style="margin-top: 30px;">
+      <div class="panel panel-default">
+          <div class="panel-body">
+            <div class="pull-left">
+              <h4 class="class_name">{{mainCtrl.info.classes[0].class_name}}</h4>
+              <span>{{mainCtrl.info.classes[0].starttime}} - {{mainCtrl.info.classes[0].endtime}}</span> &middot;
+               <span  class="strength">{{mainCtrl.info.classes[0].available_spots}} / {{mainCtrl.info.classes[0].strength}} available</span> &middot;
+                <span>30 min</span> &middot;
+                 <span>Class</span>
+              <h4><strong>{{mainCtrl.info.classes[0].price |  number:0}} Rs</strong></h4>
+            </div>
+           
+           <div class="pull-right">
+              <img ng-src="{{mainCtrl.info.classes[0].staff[0].img_url}}" class="pull-right instructor" alt="coach" >
+              <div class="clear:both"></div>
+                <div class="pull-right">
+                  <span><a class="details">View Details</a></span> <span class="btn btn-success" style="margin-left: 20px;">Book Now</span>
+                </div>
+               </div>
+           </div>
+        </div>
+      </div>
+    </div>
+      
+    <div style="margin-top: 30px;">
+      <div class="panel panel-default">
+          <div class="panel-body">
+            <div class="pull-left">
+              <h4  class="class_name">{{mainCtrl.info.classes[1].class_name}}</h4>
+              <span>{{mainCtrl.info.classes[1].starttime}} - {{mainCtrl.info.classes[1].endtime}}</span> &middot;
+               <span  class="strength">{{mainCtrl.info.classes[1].available_spots}} /  {{mainCtrl.info.classes[1].strength}} available</span> &middot;
+                <span>30 min</span> &middot;
+                 <span>Class</span>
+              <h4><strong>{{mainCtrl.info.classes[1].price |  number:0}} Rs</strong></h4>
+            </div>
+           
+           <div class="pull-right">
+              <img ng-src="{{mainCtrl.info.classes[0].staff[0].img_url}}" class="pull-right instructor" alt="coach">
+              <div class="clear:both"></div>
+                <div class="pull-right">
+                  <span><a class="details">View Details</a></span> <span class="btn btn-success" style="margin-left: 20px;">Book Now</span>
+                </div>
+               </div>
+           </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="schedule-date-time">
+        <div class="schedule-time">
+          <div class="schedule">
+            <div class="text">09:30 am</div>
+            <span class="glyphicon glyphicon-chevron-down"></span>
+          </div>
+        </div>
+        <div class="line"></div>
+        <div class="schedule-time">
+            <div class="schedule">
+              <div class="text">Wed, 18 Oct 2017</div>
+              <span class="glyphicon glyphicon-chevron-down"></span>
+            </div>
+          </div>
+          <div class="line"></div>
+  </div>
+    
+    <div style="margin-top: 30px;">
+      <div class="panel panel-default">
+          <div class="panel-body">
+            <div class="pull-left">
+              <h4  class="class_name">{{mainCtrl.info.events[0].name}}</h4>
+              <span>{{mainCtrl.info.events[0].starttime}} - {{mainCtrl.info.events[0].endtime}}</span> &middot;
+               <span  class="strength">4 trainers</span> &middot;
+                <span>30 min</span> &middot;
+                 <span>Event</span>
+              <h4><strong>500 Rs</strong></h4>
+            </div>
+           
+           <div class="pull-right">
+              <img ng-src="{{mainCtrl.info.events[1].staff[1].img_url}}" class="pull-right instructor" alt="coach">
+              <div class="clear:both"></div>
+                <div class="pull-right">
+                  <span><a class="details">View Details</a></span> <span class="btn btn-success" style="margin-left: 20px;">Book Now</span>
+                </div>
+               </div>
+           </div>
+        </div>
+      </div>
+    </div>
+    
+    <div style="margin-top: 30px;">
+      <div class="panel panel-default">
+          <div class="panel-body">
+            <div class="pull-left">
+              <h4  class="class_name">{{mainCtrl.info.facilities[0].facility_name}}</h4>
+              <span>{{mainCtrl.info.facilities[0].starttime}} - {{mainCtrl.info.facilities[0].endtime}}</span> &middot;
+               <span  class="strength">Available</span> &middot;
+                <span>30 min</span> &middot;
+                 <span>Facility</span>
+              <h4><strong>{{mainCtrl.info.facilities[0].price  |  number:0}} Rs</strong></h4>
+            </div>
+           
+           <div class="pull-right">
+              <!-- <img ng-src="{{mainCtrl.info.events[0].staff[0].img_url}}" class="pull-right instructor" alt="instructor"> -->
+              <div class="clear:both"></div>
+                <div class="pull-right">
+                  <span><a class="details">View Details</a></span> <span class="btn btn-success" style="margin-left: 20px;">Book Now</span>
+                </div>
+               </div>
+           </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="schedule-date-time">
+        <div class="schedule-time">
+          <div class="schedule">
+            <div class="text">10:00 am</div>
+            <span class="glyphicon glyphicon-chevron-down"></span>
+          </div>
+        </div>
+        <div class="line"></div>
+        <div class="schedule-time">
+            <div class="schedule">
+              <div class="text">Wed, 18 Oct 2017</div>
+              <span class="glyphicon glyphicon-chevron-down"></span>
+            </div>
+          </div>
+          <div class="line"></div>
+  </div>
+    
+    <div style="margin-top: 30px;">
+      <div class="panel panel-default">
+          <div class="panel-body">
+            <div class="pull-left">
+              <h4  class="class_name">{{mainCtrl.info.events[1].name}}</h4>
+              <span>{{mainCtrl.info.events[1].starttime}} - {{mainCtrl.info.events[1].endtime}}</span> &middot;
+               <span  class="strength">4 trainers</span> &middot;
+                <span>30 min</span> &middot;
+                 <span>Event</span>
+              <h4><strong>500 Rs</strong></h4>
+            </div>
+           
+           <div class="pull-right">
+              <img ng-src="{{mainCtrl.info.events[1].staff[1].img_url}}" class="pull-right instructor" alt="coach">
+              <div class="clear:both"></div>
+                <div class="pull-right">
+                  <span><a class="details">View Details</a></span> <span class="btn btn-success" style="margin-left: 20px;">Book Now</span>
+                </div>
+               </div>
+           </div>
+        </div>
+      </div>
+    </div>
+    
+    <div style="margin-top: 30px;">
+      <div class="panel panel-default">
+          <div class="panel-body">
+            <div class="pull-left">
+              <h4  class="class_name">{{mainCtrl.info.facilities[1].facility_name}}</h4>
+              <span>{{mainCtrl.info.facilities[1].starttime}} - {{mainCtrl.info.facilities[1].endtime}}</span> &middot;
+               <span class="strength">Available</span> &middot;
+                <span>30 min</span> &middot;
+                 <span>Facility</span>
+              <h4><strong>{{mainCtrl.info.facilities[1].price |  number:0}} Rs</strong></h4>
+            </div>
+           
+           <div class="pull-right">
+              <!-- <img ng-src="{{mainCtrl.info.events[0].staff[0].img_url}}" class="pull-right instructor" alt="instructor"> -->
+              <div class="clear:both"></div>
+                <div class="pull-right">
+                  <span><a class="details">View Details</a></span> <span class="btn btn-success" style="margin-left: 20px;">Book Now</span>
+                </div>
+               </div>
+           </div>
+        </div>
+      </div>
+    </div>
+    
+    

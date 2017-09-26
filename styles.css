@@ -1,0 +1,146 @@
+body { padding-top: 70px; }
+
+.month {
+    float: left;
+}
+
+.details {
+    color: #5cb85c;
+    cursor: pointer;
+}
+
+.details:hover {
+    text-decoration: none;
+    color: #5cb85c;
+}
+
+.date {
+    float: left;
+    margin-left: 10px;
+}
+
+.dates {
+    color: #000;
+   
+}
+
+.dates:hover {
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+    border-bottom: 3px solid #000;
+}
+
+.strength {
+    color: green;
+}
+
+.instructor {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 30px;
+    border-radius: 50%;
+}
+
+.class_name {
+    font-weight: bold;
+}
+.schedule-date-time {
+    display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    margin-top: 0px;   
+    -webkit-justify-content: space-between; 
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding-top: 0px;
+    padding-right: 0px;  
+    align-items: center;
+}
+.schedule-time {
+    margin-right: 0px;
+    margin-left: 0px;
+    border-color: rgba(74, 74, 74, .2);
+    border-radius: 50px;
+    background-color: #f3f3f3;
+    border-style: none;
+    border-width: 1px;
+    
+}
+
+.schedule {  
+    display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 1px;
+    padding: 5px 10px;
+}
+
+.text {
+    margin-right: 10px;
+    margin-left: 0px;
+    font-family: 'Open Sans', sans-serif;
+    color: #4a4a4a;
+    font-weight: 400;
+}
+
+.line {
+    width: 140px;
+    height: 1px;
+    margin-right: 10px;
+    margin-left: 10px;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    border-style: none;
+    border-width: 1px;
+    border-color: rgba(74, 74, 74, .1);
+    background-color: rgba(74, 74, 74, .1)
+}
+
+.month-wrapper{
+    display: flex;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.month-arrow {
+    display: flex;
+    width: 20px;
+    height: 20px;
+    margin-right: 0px;
+    margin-left: 0px;
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(74, 74, 74, .3);
+    border-radius: 20px;
+    opacity: 0.35;
+}
+
+.month-arrow-img {
+    height: 10px;
+}
+
+.month {
+    margin-right: 10px;
+    margin-left: 10px;
+    color: #4a4a4a;
+    font-size: 13px;
+    line-height: 19px;
+    font-weight: 600;
+}
+
